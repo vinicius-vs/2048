@@ -1,6 +1,5 @@
 #include "evento.h"
 #include <SDL2/SDL.h>
-#include <iostream>
 #include "posicaoRandom.h"
 #include "telaSDL.h"
 
@@ -125,24 +124,20 @@ void verificador(int matriz[4][4], bool &gameOver) {
                 if (i < 3 and j < 3) {
                     if (matriz[i][j] != matriz[i + 1][j] or matriz[i][j] != matriz[i][j + 1]) {
                         cont ++;
-                        std::cout<<cont<<std::endl;
                     } else{
                         cont=0;
                     }
                     } else if (j == 3 and i < 3 ) {
                         if (matriz[i][j] != matriz[i +1 ][j]) {
                             cont ++;
-                            std::cout<<cont<<std::endl;
                         }
                     }else if ( i == 3 and j < 3) {
                         if (matriz[i][j] != matriz[i][j + 1]){
                             cont++;
-                            std::cout<<cont<<std::endl;
                         }
                     }else{
 
-                        cont = 0;
-                        //std::cout<<cont<<std::endl;
+                        cont = 0;=
                     }
 
 
